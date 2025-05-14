@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Лабораторна робота №5 ІО-21 Любченко Анна "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+    <!-- Будівельний рівень -->
+
+    <!-- Освітленість -->
+
+    <!-- Відстань -->
+    <TextView
+        android:id="@+id/angle_text"
+        android:layout_width="166dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="150dp"
+        android:text="Кут нахилу: 0°"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizon_line" />
+
+    <View
+        android:id="@+id/horizon_line"
+        android:layout_width="250dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="79dp"
+        android:background="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/light_text"
+        android:layout_width="197dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="140dp"
+        android:text="Освітленість: 0 лк"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/proximity_text"
+        android:layout_width="184dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="216dp"
+        android:text="Відстань: 0 см"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
